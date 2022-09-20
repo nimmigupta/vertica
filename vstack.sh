@@ -11,5 +11,5 @@ for i in {1..3};
             echo " **********************">> /tmp/vstack_$host_$i.log;
             ssh $host "/opt/vertica/bin/vstack">>/tmp/vstack_$host_$i.log;
         done;
-        sleep 300;
+        sleep 100;
     done;
